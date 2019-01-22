@@ -1,6 +1,6 @@
 {
   "name": "@kevinwang0316/mongodb-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A MongoDB helper to help use MongoDB easier.",
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
