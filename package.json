@@ -7,7 +7,7 @@
     "unitTest": "jest",
     "unitTestWatch": "jest --watch",
     "unitTestCoverage": "jest --coverage",
-    "build": "babel src --out-dir distribution && uglifyjs distribution/log.js -c -m -o distribution/log.js"
+    "build": "babel src --out-dir distribution && uglifyjs distribution/MongoDBHelper.js -c -m -o distribution/MongoDBHelper.js"
   },
   "main": "./distribution/MongoDBHelper.js",
   "author": "Kevin W.",

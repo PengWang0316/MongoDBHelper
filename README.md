@@ -5,10 +5,17 @@ A MongoDB helper allows using MongoDB easier.
 [![Build Status](https://travis-ci.org/PengWang0316/MongoDBHelper.svg?branch=master)](https://travis-ci.org/PengWang0316/MongoDBHelper)
 [![Coverage Status](https://coveralls.io/repos/github/PengWang0316/MongoDBHelper/badge.svg?branch=master)](https://coveralls.io/github/PengWang0316/MongoDBHelper?branch=master)
 
+# Dependencies requirement
+
+Due to this library is a wrapper for MongoDB the mongodb package is required.
+Please check your package.json file.
+
+- mongodb
+
 # Installing
 
 ```
-npm install --save @kevinwang0316/mongodb-helper
+npm install --save @kevinwang0316/mongodb-helper mongodb
 ```
 
 # Usage
