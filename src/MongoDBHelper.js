@@ -1,10 +1,10 @@
-import { MongoClient } from 'mongodb';
-import log from '@kevinwang0316/log';
+const { MongoClient } = require('mongodb');
+const log = require('@kevinwang0316/log');
 
 var dbs; // Save dbs to a global variable for reusing
 
 // Initializing the connection pool.
-export const initialConnects = async (dbUrl, dbName, poolSize = 1) => {
+exports.initialConnects = async (dbUrl, dbName, poolSize = 1) => {
   if (!dbs) { // Initialize the database connect if dbs has not been exsit
     log.debug('Initializing a new db connection...');
     try {
@@ -17,22 +17,22 @@ export const initialConnects = async (dbUrl, dbName, poolSize = 1) => {
   }
 };
 
-export const getDB = () => dbs;
+exports.getDB = () => dbs;
 
 /* Using Promise to wrap connection and toArray */
-export const promiseFindResult = callback => new Promise((resolve, reject) => callback(dbs)
+exports.promiseFindResult = callback => new Promise((resolve, reject) => callback(dbs)
   .toArray((err, result) => {
     if (err) reject(err);
     else resolve(result);
   }));
 
-export const promiseNextResult = callback => new Promise((resolve, reject) => callback(dbs)
+exports.promiseNextResult = callback => new Promise((resolve, reject) => callback(dbs)
   .next((err, result) => {
     if (err) reject(err);
     else resolve(result);
   }));
 
-export const promiseInsertResult = callback => new Promise((resolve, reject) => callback(dbs)
+exports.promiseInsertResult = callback => new Promise((resolve, reject) => callback(dbs)
   .then(result => resolve()));
 
-export const promiseReturnResult = callback => new Promise((resolve, reject) => resolve(callback(dbs)));
+exports.promiseReturnResult = callback => new Promise((resolve, reject) => resolve(callback(dbs)));

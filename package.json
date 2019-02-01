@@ -1,6 +1,6 @@
 {
   "name": "@kevinwang0316/mongodb-helper",
-  "version": "1.0.2",
+  "version": "1.0.12",
   "description": "A MongoDB helper to help use MongoDB easier.",
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
@@ -39,7 +39,7 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
-    "@babel/runtime": "^7.2.0",
+    "@babel/runtime": "^7.3.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "coveralls": "^3.0.2",
