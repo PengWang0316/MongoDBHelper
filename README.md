@@ -65,4 +65,4 @@ log_level=ERROR
 
 # License
 
-Log is licensed under MIT License - see the [License file](https://github.com/PengWang0316/MongoDBHelper/blob/master/LICENSE).
+MongoDB Helper is licensed under MIT License - see the [License file](https://github.com/PengWang0316/MongoDBHelper/blob/master/LICENSE).
